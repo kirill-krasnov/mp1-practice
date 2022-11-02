@@ -38,7 +38,7 @@ int main() {
 		} while ((num < 1) || (num > 1000));
 
 		a = rand() % 1000;
-		printf("The numer is %d.\n", a);
+		printf("The number is %d.\n", a);
 		printf("Input the the answer ( <, >, = )\n");
 
 		do {
@@ -48,14 +48,14 @@ int main() {
 				dlim = a + 1;
 				a = dlim + rand() % (ulim - dlim + 1);
 				count++;
-				printf("The numer is %d.\n", a);
+				printf("The number is %d.\n", a);
 			}
 
 			if (ans == '<') {
 				ulim = a - 1;
 				a = dlim + rand() % (ulim - dlim + 1);
 				count++;
-				printf("The numer is %d.\n", a);
+				printf("The number is %d.\n", a);
 			}
 		} while (a != num);
 
